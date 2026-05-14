@@ -1044,6 +1044,252 @@ export const documents = [
   },
 ];
 
+// ---------- QUESTS ----------
+// Real-world places, memorials and addresses pulled from the source documents.
+// Each one is a chance to go and stand somewhere the family stood.
+// `region` groups them on the page; `quote` is the source-doc passage that
+// names the location; `quoteSource` and `citations` point into documents[].
+export const quests = [
+  // ---- France: WWI ----
+  {
+    id: 'thiepval-bart-naylor',
+    title: "Find Bart Naylor's name on the Thiepval Memorial",
+    region: 'France',
+    location: 'Thiepval Memorial, Somme, France',
+    summary:
+      "Lance Corporal Bartholomew Naylor, of the 10th Battalion Royal Dublin Fusiliers, has no known grave. He is commemorated alongside more than 72,000 other British and South African soldiers of the Somme. Killed 13 November 1916, age 22 — three days before his cousin Edward Francis Hughes died of war wounds in London.",
+    quote:
+      'L/Cpl Bartholomew Naylor, service 26961, 10th Bn. Royal Dublin Fusiliers. Died 13 November 1916, age 22. Son of Mrs Mary Anne Naylor, Newcourt Cottage, Bray Co. Wicklow. Thiepval Memorial, Somme France.',
+    quoteSource: { docId: 'cwgc-bart-naylor', label: 'Commonwealth War Graves entry' },
+    citations: [
+      { docId: 'cwgc-bart-naylor' },
+      { docId: 'bray-war-memorial' },
+    ],
+  },
+  {
+    id: 'doullens-bob-hughes',
+    title: "Find Bob Hughes's grave at Doullens",
+    region: 'France',
+    location: 'Doullens War Cemetery, Northern France',
+    summary:
+      "Robert Frederick \"Bob\" Hughes, William John's younger brother, served in the Royal Flying Corps / RAF. He survived the war itself but died of the 1918–19 influenza pandemic on 4 February 1919, age 21, and is buried at Doullens.",
+    quote:
+      "ROBERT FREDERICK | 18 Jan 1898 | 4 Feb 1919 | Died in WWI (RAF / 1918–19 flu, Doullens)",
+    quoteSource: { docId: 'family-bible-hughes', label: 'Hughes Family Bible record' },
+    citations: [
+      { docId: 'memoir-bart-hughes' },
+      { docId: 'family-bible-hughes' },
+    ],
+  },
+
+  // ---- Bray, Co. Wicklow ----
+  {
+    id: 'naylors-cove',
+    title: "Stand at Naylor's Cove",
+    region: 'Bray · Co. Wicklow',
+    location: 'Foot of Bray Head, Co. Wicklow',
+    summary:
+      "A small cove at the foot of Bray Head, still marked on old maps as Naylor's Cove. The elder Bartholomew (b. 1852) leased it from the Town Commissioners in the late 1880s, built bathing huts and a small pier for visitors, plus a granite boat house that was still standing in the 1950s.",
+    quote:
+      "In the late 1880's Bart Naylor, a local fisherman and boat builder from the strand took a lease on the cove from the Towns Commissioners. He erected bathing boxes and a small pier to facilitate bathing and diving.",
+    quoteSource: { docId: 'pictorial-history-bray', label: 'A Pictorial History of Bray' },
+    citations: [{ docId: 'pictorial-history-bray' }],
+  },
+  {
+    id: 'newcourt-cottage',
+    title: 'Visit Newcourt Cottage on the Strand',
+    region: 'Bray · Co. Wicklow',
+    location: 'Bray Strand, Co. Wicklow',
+    summary:
+      "Home of Bartholomew and Mary Anne and the ten children they raised together — including Lydia. The same address is recorded for L/Cpl Bart Naylor on his Commonwealth War Graves entry, decades later.",
+    quote:
+      'Son of Mrs Mary Anne Naylor, Newcourt Cottage, Bray Co. Wicklow.',
+    quoteSource: { docId: 'cwgc-bart-naylor', label: 'CWGC entry, 1916' },
+    citations: [
+      { docId: 'stpauls-baptisms' },
+      { docId: 'cwgc-bart-naylor' },
+    ],
+  },
+  {
+    id: 'christ-church-bray',
+    title: 'Find Bartholomew and Mary Anne in the Christ Church register',
+    region: 'Bray · Co. Wicklow',
+    location: 'Christ Church, Main Street, Bray',
+    summary:
+      "Where Bartholomew Naylor married Mary Anne Hillard McMurray on 3 July 1878. Mary Anne was working as a servant at 2 Florence Terrace; Bart was a fisherman of the Strand. Every grandchild on the direct line descends from this marriage.",
+    quote:
+      'BARTHOLOMEW NAYLOR, The Strand, Bray, Bachelor, full age, Fisherman, son of SAMUEL NAYLOR, Fisherman. MARY ANNE HILLARD McMURRAY, 2 Florence Tce., Bray, Spinster, full age, Servant, daughter of WILLIAM JOHN McMURRAY, Fisherman.',
+    quoteSource: { docId: 'christ-church-marriage-1878', label: 'Marriage register, 3 July 1878' },
+    citations: [
+      { docId: 'christ-church-marriage-1878' },
+      { docId: 'crowther-letter-1999' },
+    ],
+  },
+  {
+    id: 'st-pauls-bray',
+    title: "Find the family in the St. Paul's registers",
+    region: 'Bray · Co. Wicklow',
+    location: "St. Paul's Church, Main Street, Bray",
+    summary:
+      "Where Samuel Nailor married Elizabeth Whitton on 1 February 1849, and where every Naylor baptism between 1801 and the 1890s is recorded. The oldest entry of all is the 1801 baptism of \"William, 1st son of Batey [Bartholomew] and Anne Naylor, Fisherman of the sea\" — the furthest-back link we have.",
+    quote:
+      'WILLIAM, 1st son, baptism 10 June 1801 — of Batey [Bartholomew] and Anne Naylor, Fisherman of the sea.',
+    quoteSource: { docId: 'stpauls-baptisms', label: "St. Paul's baptism register, 1801" },
+    citations: [
+      { docId: 'stpauls-marriage-1849' },
+      { docId: 'stpauls-baptisms' },
+    ],
+  },
+  {
+    id: 'bray-war-memorial-bart',
+    title: "Find Bart Naylor on the Bray War Memorial",
+    region: 'Bray · Co. Wicklow',
+    location: 'Bray War Memorial, Co. Wicklow',
+    summary:
+      "Bray remembers its own. The town's war memorial lists five Bray-born men killed in the First World War, with Bart Naylor first among them. A second pilgrimage point alongside the Thiepval Memorial in France.",
+    quote:
+      'Bray-born WWI dead listed: L/Cpl Bartholomew Naylor (13 Nov 1916), Sgt John McKenna (Gordon Highlanders, 18 Aug 1916), Signaller Thomas Neill, Pte Robert Howlett Nicholson, Pte James Nolan.',
+    quoteSource: { docId: 'bray-war-memorial', label: 'Bray War Memorial, FWW Special Edition' },
+    citations: [{ docId: 'bray-war-memorial' }],
+  },
+  {
+    id: 'dock-terrace-22',
+    title: 'Walk to 22 Dock Terrace',
+    region: 'Bray · Co. Wicklow',
+    location: '22 Dock Terrace, Bray',
+    summary:
+      "Where the family lived at the 1901 Census of Ireland — one of twenty houses on the terrace, holding 111 people between them. Neighbours included Barnes (#21), Curran, Dowling and Fortune (#23).",
+    quote:
+      'Surname index of 20 houses with 111 persons. House #22 = Naylor (highlighted).',
+    quoteSource: { docId: 'census-1901', label: '1901 Census, Dock Terrace, Bray' },
+    citations: [{ docId: 'census-1901' }],
+  },
+  {
+    id: 'rose-cottage-bray',
+    title: 'Find Rose Cottage on the seafront',
+    region: 'Bray · Co. Wicklow',
+    location: 'Bray seafront, Co. Wicklow',
+    summary:
+      "Where the Catholic-side Naylor brothers all lived together with their sister — Sam, John \"Sketch\", Bert \"The Snipe\" and a fourth brother. Sam rowed a 25-foot boat to Ballygannon at 2am, four days a week, fishing codling, lobster, whelk, salmon and herring.",
+    quote:
+      "Sam Naylor was one of four brothers — all fishermen; they all lived with their sister at Rose Cottage, Bray.",
+    quoteSource: { docId: 'pictorial-history-bray', label: 'A Pictorial History of Bray' },
+    citations: [{ docId: 'pictorial-history-bray' }],
+  },
+
+  // ---- London ----
+  {
+    id: 'norwood-edward-francis',
+    title: "Photograph Edward Francis's name on the Norwood war memorial",
+    region: 'London',
+    location: 'West Norwood Cemetery (gates), South London',
+    summary:
+      "Lydia's brother-in-law Edward Francis Hughes — Bart's father's eldest brother — was killed on 16 November 1916, three days after his cousin Bart Naylor died at the Somme. He's buried at Norwood, and his name is on the war memorial just inside the cemetery gates.",
+    quote:
+      '…sadly he died on the 16th November 1916, he was in the army, and is buried in Norwood Cemetary in South London. His name is to be found on the War Memorial just inside the gates to the cemetary.',
+    quoteSource: { docId: 'memoir-bart-hughes', page: 6, label: 'Bart Hughes memoir, p.6' },
+    citations: [
+      { docId: 'memoir-bart-hughes', page: 6 },
+      { docId: 'norwood-war-memorial' },
+    ],
+  },
+  {
+    id: 'norwood-lydia',
+    title: "Visit Lydia's grave at Norwood Cemetery",
+    region: 'London',
+    location: 'West Norwood Cemetery, South London',
+    summary:
+      "Lydia Naylor — Bray-born, mother of Bart and Marion — died on 20 October 1924, in her early thirties. She was buried at Norwood. Bart was seven at the time; Marion was three.",
+    quote:
+      "my Mother, Lydia, 20th October 1924.",
+    quoteSource: { docId: 'memoir-bart-hughes', label: 'Bart Hughes memoir' },
+    citations: [{ docId: 'memoir-bart-hughes' }],
+  },
+  {
+    id: 'crawthew-grove',
+    title: 'Knock on the door of 4 Crawthew Grove',
+    region: 'London',
+    location: '4 Crawthew Grove, East Dulwich SE22',
+    summary:
+      "The Hughes family home from c.1900 right through to January 1970 — three generations under one roof for the longest stretch. Lydia moved in with William John, his mother and his sister Lillie after their marriage in 1915. Bart and Marion were both born here. Aunt Lillie lived there alone until her death in 1970.",
+    quote:
+      'ELIZABETH ("Aunt Lillie") | 9 Oct 1886 | 30 Jan 1970 | Lived at Crawthew Grove all her life.',
+    quoteSource: { docId: 'memoir-bart-hughes', label: 'Bart Hughes memoir' },
+    citations: [{ docId: 'memoir-bart-hughes' }],
+  },
+  {
+    id: 'kennington-new-street',
+    title: 'Stand outside 23 New Street, Kennington',
+    region: 'London',
+    location: '23 New Street, Kennington, SE London',
+    summary:
+      "The Hughes family home before East Dulwich. Edward Francis ran his engraving business out of this address, and was married from here in 1909. The whole family came over from Donnybrook to Wimbledon to Kennington in the 1890s before settling at Crawthew Grove.",
+    quote:
+      'Edward Francis Hughes married Alice May Bygrave at St. Mary Newington on 28 Aug 1909. He worked as an engraver out of 23 New Street, Kennington.',
+    quoteSource: { docId: 'memoir-bart-hughes', label: 'Bart Hughes memoir' },
+    citations: [{ docId: 'memoir-bart-hughes' }],
+  },
+  {
+    id: 'st-john-goose-green',
+    title: "Find St. John's at Goose Green",
+    region: 'London',
+    location: "St. John the Evangelist, Goose Green, East Dulwich",
+    summary:
+      "Where Lydia married William John Hughes in 1915 — and where her funeral was held in 1924. Both ends of the marriage, in the same parish church.",
+    quote:
+      'Married 1915, St. John\'s, Goose Green, East Dulwich.',
+    quoteSource: { docId: 'memoir-bart-hughes', label: 'Bart Hughes memoir' },
+    citations: [{ docId: 'memoir-bart-hughes' }],
+  },
+  {
+    id: 'st-mary-newington',
+    title: 'Visit the Hughes parish at St. Mary Newington',
+    region: 'London',
+    location: "St. Mary Newington, SE London",
+    summary:
+      "The Hughes family's parish church in the Kennington years. William John (Bart's father) was in the choir. His older brother Edward Francis married Alice May Bygrave here in 1909.",
+    quote:
+      'Local parish: St. Mary Newington — grandmother taught Sunday school, William John Hughes (Bart\'s father) was in the choir.',
+    quoteSource: { docId: 'memoir-bart-hughes', label: 'Bart Hughes memoir' },
+    citations: [{ docId: 'memoir-bart-hughes' }],
+  },
+
+  // ---- Dublin & Devon ----
+  {
+    id: 'donnybrook-sandford',
+    title: 'Find Sandford Avenue in Donnybrook',
+    region: 'Dublin',
+    location: 'Sandford Avenue, Donnybrook, Dublin',
+    summary:
+      "The first Hughes family home of record. Edward Hughes (master printer and bookbinder) and Isabella Carroll began married life here in 1881, before the family crossed the Irish Sea — first to Wimbledon, then to Kennington and East Dulwich.",
+    quote:
+      'Edward Hughes & Isabella Carroll (married 6 April 1881 in Dublin)… Lived first at Sandford Avenue, Donnybrook, Dublin.',
+    quoteSource: { docId: 'memoir-bart-hughes', label: 'Bart Hughes memoir' },
+    citations: [{ docId: 'memoir-bart-hughes' }],
+  },
+  {
+    id: 'barnstaple-george',
+    title: 'The Naylors of Barnstaple',
+    region: 'Devon',
+    location: 'Barnstaple, Devon',
+    summary:
+      "George Naylor (b. 1878), eldest of Bart and Mary Anne's ten, eventually settled in Barnstaple with his wife Maggie. His daughter Cissie stayed on in the old family house. The English county branches — Barnstaple, Hove, Minehead — fan out from him.",
+    quote:
+      'Barnstaple, Devon — where George Naylor (b. 1878) settled; his daughter Cissie remained in the old family house.',
+    quoteSource: { docId: 'memoir-bart-hughes', label: 'Bart Hughes memoir' },
+    citations: [{ docId: 'memoir-bart-hughes' }],
+  },
+];
+
+// Display order for region groupings on the Quests page.
+export const questRegions = [
+  'Bray · Co. Wicklow',
+  'London',
+  'France',
+  'Dublin',
+  'Devon',
+];
+
 // ---------- STORIES (longer set-pieces) ----------
 export const stories = {
   'lydia-death-1924': {

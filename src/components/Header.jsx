@@ -9,6 +9,7 @@ const NAV = [
   { to: '/story', label: 'Story' },
   { to: '/people', label: 'People' },
   { to: '/places', label: 'Places' },
+  { to: '/quests', label: 'Quests' },
   { to: '/documents', label: 'Documents' },
   { to: '/timeline', label: 'Timeline' },
 ]

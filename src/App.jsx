@@ -7,6 +7,7 @@ import PeopleView from './views/PeopleView'
 import PersonView from './views/PersonView'
 import PlacesView from './views/PlacesView'
 import DocumentsView from './views/DocumentsView'
+import QuestsView from './views/QuestsView'
 import TimelineView from './views/TimelineView'
 import WhoAreYouView from './views/WhoAreYouView'
 import { ViewerProvider } from './lib/viewerContext'
@@ -24,6 +25,7 @@ export default function App() {
             <Route path="/people/:id" element={<PersonView />} />
             <Route path="/places" element={<PlacesView />} />
             <Route path="/documents" element={<DocumentsView />} />
+            <Route path="/quests" element={<QuestsView />} />
             <Route path="/timeline" element={<TimelineView />} />
             <Route path="/who-are-you" element={<WhoAreYouView />} />
             <Route path="*" element={<Navigate to="/" replace />} />
