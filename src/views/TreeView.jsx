@@ -93,9 +93,10 @@ export default function TreeView() {
           pathFunc="step"
           collapsible={true}
           zoomable={true}
-          zoom={0.85}
-          separation={{ siblings: 1.1, nonSiblings: 1.3 }}
-          nodeSize={{ x: 230, y: 130 }}
+          zoom={1}
+          scaleExtent={{ min: 0.3, max: 2 }}
+          separation={{ siblings: 1.15, nonSiblings: 1.4 }}
+          nodeSize={{ x: 280, y: 160 }}
           pathClassFunc={(linkData) => {
             const childData = linkData.target.data._data
             return childData?.uncertain ? 'tree-link-uncertain' : 'tree-link'

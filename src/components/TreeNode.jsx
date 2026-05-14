@@ -1,14 +1,14 @@
 import { branchStyle } from '../data/familyData'
 
 // Custom node renderer for react-d3-tree.
-// `nodeDatum` is the tree node object we built; `toggleNode` collapses children.
-// `onSelect` receives the person's id.
-export default function TreeNode({ nodeDatum, toggleNode, onSelect, viewerHighlighted }) {
+// SVG text renders much more cleanly in sans-serif than in a thin serif
+// at small sizes — so we use Inter throughout the node.
+export default function TreeNode({ nodeDatum, toggleNode, onSelect }) {
   const d = nodeDatum._data || {}
   const branch = branchStyle[d.branch] || branchStyle.naylor
-  const highlighted = d.highlighted || viewerHighlighted
-  const width = 200
-  const height = 64
+  const highlighted = d.highlighted
+  const width = 240
+  const height = 86
   const hasChildren = (nodeDatum.children?.length || 0) + (nodeDatum._children?.length || 0) > 0
   const isCollapsed = !!nodeDatum._children && !nodeDatum.children
   const dates = nodeDatum.attributes?.dates || ''
@@ -29,9 +29,9 @@ export default function TreeNode({ nodeDatum, toggleNode, onSelect, viewerHighli
         height={height}
         rx={10}
         fill="#fbf7f0"
-        stroke={branch.color}
-        strokeWidth={highlighted ? 3.5 : 1.5}
-        strokeDasharray={d.uncertain ? '5,3' : '0'}
+        stroke={highlighted ? '#dc9f50' : branch.color}
+        strokeWidth={highlighted ? 4 : 1.5}
+        strokeDasharray={d.uncertain ? '6,4' : '0'}
       />
       <rect
         x={-width / 2}
@@ -43,40 +43,45 @@ export default function TreeNode({ nodeDatum, toggleNode, onSelect, viewerHighli
       />
       <text
         x={0}
-        y={-height / 2 + 22}
+        y={-height / 2 + 24}
         textAnchor="middle"
         style={{
-          fontFamily: 'Cormorant Garamond, Georgia, serif',
-          fontSize: 16,
+          fontFamily: 'Inter, system-ui, sans-serif',
+          fontSize: 14,
           fontWeight: 600,
           fill: '#241b10',
+          letterSpacing: '-0.01em',
         }}
       >
-        {truncate(nodeDatum.name, 26)}
+        {truncate(nodeDatum.name, 28)}
       </text>
       {dates && (
         <text
           x={0}
-          y={-height / 2 + 38}
+          y={-height / 2 + 44}
           textAnchor="middle"
-          style={{ fontFamily: 'Inter, sans-serif', fontSize: 10.5, fill: '#6e5333' }}
+          style={{
+            fontFamily: 'Inter, system-ui, sans-serif',
+            fontSize: 11,
+            fontWeight: 500,
+            fill: '#6e5333',
+          }}
         >
-          {dates}
+          {truncate(dates, 36)}
         </text>
       )}
       {descriptor && (
         <text
           x={0}
-          y={-height / 2 + 53}
+          y={-height / 2 + 62}
           textAnchor="middle"
           style={{
-            fontFamily: 'Inter, sans-serif',
-            fontSize: 10,
+            fontFamily: 'Inter, system-ui, sans-serif',
+            fontSize: 10.5,
             fill: '#8a6a3f',
-            fontStyle: 'italic',
           }}
         >
-          {truncate(descriptor, 36)}
+          {truncate(descriptor, 40)}
         </text>
       )}
 
@@ -88,11 +93,11 @@ export default function TreeNode({ nodeDatum, toggleNode, onSelect, viewerHighli
             toggleNode()
           }}
         >
-          <circle r={9} fill={branch.color} />
+          <circle r={10} fill={branch.color} />
           <text
             textAnchor="middle"
             y={4}
-            style={{ fontSize: 12, fill: '#fff', fontWeight: 700, fontFamily: 'Inter, sans-serif' }}
+            style={{ fontSize: 13, fill: '#fff', fontWeight: 700, fontFamily: 'Inter, sans-serif' }}
           >
             {isCollapsed ? '+' : '−'}
           </text>
