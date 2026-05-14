@@ -46,7 +46,7 @@ export default function Header() {
             className="ml-2 px-3 py-1.5 rounded-md text-sm bg-coral-500 text-white hover:bg-coral-600 hover:text-white no-underline"
             title="Personalise which ancestors are highlighted"
           >
-            {viewer?.name && viewer.id !== 'you' ? `Viewing as ${viewer.name.split(' ')[0]}` : 'Who are you?'}
+            {viewer?.name ? `Viewing as ${viewer.name.split(' ')[0]}` : 'Who are you?'}
           </Link>
         </nav>
 
@@ -86,7 +86,7 @@ export default function Header() {
               onClick={() => setOpen(false)}
               className="mt-1 px-2 py-2 rounded-md text-sm bg-coral-500 text-white no-underline"
             >
-              {viewer?.name && viewer.id !== 'you' ? `Viewing as ${viewer.name.split(' ')[0]}` : 'Who are you?'}
+              {viewer?.name ? `Viewing as ${viewer.name.split(' ')[0]}` : 'Who are you?'}
             </Link>
           </div>
         </nav>

@@ -7,8 +7,8 @@ const STORAGE_KEY = 'naylor-tree:viewer'
 
 export function ViewerProvider({ children }) {
   const [viewerId, setViewerIdState] = useState(() => {
-    if (typeof window === 'undefined') return 'you'
-    return localStorage.getItem(STORAGE_KEY) || 'you'
+    if (typeof window === 'undefined') return null
+    return localStorage.getItem(STORAGE_KEY) || null
   })
   const [hasChosen, setHasChosen] = useState(() => {
     if (typeof window === 'undefined') return false
@@ -21,7 +21,14 @@ export function ViewerProvider({ children }) {
     try { localStorage.setItem(STORAGE_KEY, id) } catch { /* ignore */ }
   }
 
+  function clearViewer() {
+    setViewerIdState(null)
+    setHasChosen(false)
+    try { localStorage.removeItem(STORAGE_KEY) } catch { /* ignore */ }
+  }
+
   const ancestors = useMemo(() => {
+    if (!viewerId) return new Set()
     const ids = ancestorsOf(viewerId)
     ids.add(viewerId)
     return ids
@@ -31,10 +38,11 @@ export function ViewerProvider({ children }) {
     () => ({
       viewerId,
       setViewerId,
+      clearViewer,
       hasChosen,
       ancestors,
       candidates: viewerCandidates,
-      viewer: people[viewerId],
+      viewer: viewerId ? people[viewerId] : null,
     }),
     [viewerId, hasChosen, ancestors]
   )

@@ -4,7 +4,7 @@ import TreeNode from '../components/TreeNode'
 import PersonPanel from '../components/PersonPanel'
 import { branchStyle, buildTree } from '../data/familyData'
 import { useViewer } from '../lib/viewerContext'
-import { Link } from 'react-router-dom'
+import { Navigate } from 'react-router-dom'
 
 const ROOTS = [
   { id: 'bartholomew-naylor-elder', label: 'Naylor line (from c.1801)' },
@@ -34,10 +34,12 @@ export default function TreeView() {
     return () => window.removeEventListener('resize', update)
   }, [])
 
+  if (!hasChosen) {
+    return <Navigate to="/who-are-you" replace />
+  }
+
   return (
     <div className="relative">
-      {!hasChosen && <FirstVisitBanner />}
-
       <div className="max-w-6xl mx-auto px-4 pt-6 pb-2">
         <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3">
           <div>
@@ -143,20 +145,3 @@ function Legend() {
   )
 }
 
-function FirstVisitBanner() {
-  return (
-    <div className="bg-ochre-300/30 border-b border-ochre-300">
-      <div className="max-w-6xl mx-auto px-4 py-2 flex items-center justify-between gap-3 text-sm">
-        <span className="text-sepia-800">
-          Welcome — tell me who you are and I'll highlight your direct line.
-        </span>
-        <Link
-          to="/who-are-you"
-          className="px-3 py-1 rounded-md bg-coral-500 text-white text-sm no-underline hover:bg-coral-600 hover:text-white"
-        >
-          Who are you?
-        </Link>
-      </div>
-    </div>
-  )
-}

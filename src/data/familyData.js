@@ -221,7 +221,7 @@ export const people = {
     occupation: 'Fisherman, boat builder',
     descriptor: 'Leased Naylor\'s Cove from the Town Commissioners',
     bio:
-      'Baptised "Seashore" — a memorable register entry. Son of Samuel Nailor and Elizabeth Whitton. Married Mary Anne Hillard McMurray on 3 July 1878 at Christ Church, Bray.\n\nA fisherman and boat builder. In the late 1890s he took the lease on the cove at the foot of Bray Head from the Town Commissioners — that cove still appears on old maps as Naylor\'s Cove. He built bathing huts, a small pier, and a granite boat house (still standing in the 1950s). He built racing boats for Bray\'s famous regattas.\n\nThe 1901 Census records the household at house #22 Dock Terrace, Bray, one of twenty houses with 111 people between them.',
+      'Baptised "Seashore" — a memorable register entry. Son of Samuel Nailor and Elizabeth Whitton. Married Mary Anne Hillard McMurray on 3 July 1878 at Christ Church, Bray.\n\nA fisherman and boat builder. In the late 1880s he took the lease on the cove at the foot of Bray Head from the Town Commissioners — that cove still appears on old maps as Naylor\'s Cove. He built bathing huts, a small pier, and a granite boat house (still standing in the 1950s). He built racing boats for Bray\'s famous regattas.\n\nThe 1901 Census records the household at house #22 Dock Terrace, Bray, one of twenty houses with 111 people between them.',
     parents: ['samuel-nailor', 'elizabeth-whitton'],
     spouse: ['mary-anne-mcmurray'],
     children: [
@@ -377,18 +377,18 @@ export const people = {
   'annabella-naylor-1887': {
     id: 'annabella-naylor-1887', name: 'Annabella Naylor',
     nameVariants: ['Anna Bella'],
-    born: '4 March 1887', died: 'unknown', branch: 'naylor', location: 'Bray',
+    born: '1 April 1887', died: 'unknown', branch: 'naylor', location: 'Bray',
     descriptor: 'Sixth child; date varies between sources',
     bio:
-      'Baptismal register: 4 March 1887. The Naylor list in the family memoir gives 1 April 1888. We trust the church register over the memoir for dates.',
+      'Baptismal register: 1 April 1887. The Naylor list in the family memoir gives 1 April 1888. We trust the church register over the memoir for dates.',
     parents: ['bartholomew-naylor-1852', 'mary-anne-mcmurray'],
     spouse: [], children: [], stories: [], photos: [], sources: ['stpauls-baptisms'],
   },
   'william-john-naylor-1889': {
     id: 'william-john-naylor-1889', name: 'William John Naylor',
-    born: '10 April 1889', died: 'unknown', branch: 'naylor', location: 'Bray',
+    born: '19 April 1889', died: 'unknown', branch: 'naylor', location: 'Bray',
     descriptor: 'Seventh child',
-    bio: 'Born 10 April 1889 at Newcourt Cottage, Bray. Named for his maternal grandfather, William John McMurray.',
+    bio: 'Born 19 April 1889 at Newcourt Cottage, Bray (memoir date; the Bray Churches register gives a baptism of 7 June 1889). Named for his maternal grandfather, William John McMurray.',
     parents: ['bartholomew-naylor-1852', 'mary-anne-mcmurray'],
     spouse: [], children: [], stories: [], photos: [], sources: ['stpauls-baptisms'],
   },
@@ -614,11 +614,11 @@ export const people = {
     born: '21 May 1921',
     died: '',
     branch: 'hughes',
-    location: 'Bray (birth) → London',
+    location: 'Bray (birth) → London → Australia',
     occupation: '',
-    descriptor: 'Grandmother; lost her mother aged 3',
+    descriptor: 'Lost her mother aged 3; emigrated to Australia after WWII',
     bio:
-      "Born 21 May 1921 in Bray — Lydia specifically returned to Ireland for the birth. Was only 3 when her mother died in October 1924. Survived a candle fire when her hair caught light around age 2½ — her aunt Lillie smothered the flames with her bare hands.\n\nMarried Donald Newman. Two children: Anne and Peter.",
+      "Born 21 May 1921 in Bray — Lydia specifically returned to Ireland for the birth. Was only 3 when her mother died in October 1924. Survived a candle fire when her hair caught light around age 2½ — her aunt Lillie smothered the flames with her bare hands.\n\nMarried Donald Newman; two children, Peter (b. 1951) and Anne (b. 1962). Some time after the Second World War, Marion and Donald emigrated to Australia, where both children were raised — the family has lived in Australia ever since.",
     parents: ['william-john-hughes', 'lydia-naylor-1892'],
     spouse: ['donald-newman'],
     children: ['anne-newman', 'peter-newman'],
@@ -628,54 +628,80 @@ export const people = {
   },
   'donald-newman': {
     id: 'donald-newman', name: 'Donald Newman',
-    born: 'unknown', died: '', branch: 'newman', location: 'England',
-    descriptor: 'Husband of Marion Hughes',
-    bio: 'Married Marion Lydia Hughes. Father of Anne and Peter.',
+    born: 'unknown', died: '', branch: 'newman', location: 'England → Australia',
+    descriptor: 'Took the family to Australia after the war',
+    bio: 'Married Marion Lydia Hughes. Father of Peter (b. 1951) and Anne (b. 1962). Some time after the Second World War, Donald emigrated to Australia with Marion — the Newmans (and later the Mackays) have lived in Australia ever since.',
     parents: [], spouse: ['marion-lydia-hughes'],
     children: ['anne-newman', 'peter-newman'],
     stories: [], photos: [], sources: [], isAncestor: true,
   },
   'anne-newman': {
     id: 'anne-newman', name: 'Anne Newman',
-    born: 'unknown', died: '', branch: 'newman', location: 'England',
+    born: '1962', died: '', branch: 'newman', location: 'Australia',
     descriptor: 'Daughter of Marion and Donald',
-    bio: 'Eldest child of Marion Lydia Hughes and Donald Newman. Married Mark Mackay. Mother of David and Jack.',
+    bio: 'Born 1962 in Australia, after Marion and Donald had emigrated. Younger child of Marion Lydia Hughes and Donald Newman. Married Mark Mackay. Mother of David and Jack.',
     parents: ['marion-lydia-hughes', 'donald-newman'],
     spouse: ['mark-mackay'], children: ['david-mackay', 'you'],
     stories: [], photos: [], sources: [], isAncestor: true,
   },
   'peter-newman': {
     id: 'peter-newman', name: 'Peter Newman',
-    born: 'unknown', died: '', branch: 'newman', location: 'England',
+    born: '1951', died: '', branch: 'newman', location: 'Australia',
     descriptor: 'Son of Marion and Donald',
-    bio: 'Son of Marion Lydia Hughes and Donald Newman.',
+    bio: 'Born 1951, son of Marion Lydia Hughes and Donald Newman. Raised in Australia after his parents emigrated. Father of Naomi.',
     parents: ['marion-lydia-hughes', 'donald-newman'],
+    spouse: [], children: ['naomi-newman'], stories: [], photos: [], sources: [],
+  },
+  'naomi-newman': {
+    id: 'naomi-newman', name: 'Naomi Newman',
+    born: 'unknown', died: '', branch: 'newman', location: 'Australia',
+    descriptor: 'Daughter of Peter',
+    bio: 'Daughter of Peter Newman; granddaughter of Marion Lydia Hughes and Donald Newman.',
+    parents: ['peter-newman'],
     spouse: [], children: [], stories: [], photos: [], sources: [],
   },
   'mark-mackay': {
     id: 'mark-mackay', name: 'Mark Mackay',
-    born: 'unknown', died: '', branch: 'mackay', location: 'England',
-    descriptor: 'Father of David and Gun',
-    bio: 'Married Anne Newman. Father of David (1993) and Gun (1996).',
+    born: 'unknown', died: '', branch: 'mackay', location: 'Australia',
+    descriptor: 'Father of David and Jack',
+    bio: 'Married Anne Newman. Father of David (1993) and Jack (1996). The Mackays have lived in Australia throughout.',
     parents: [], spouse: ['anne-newman'], children: ['david-mackay', 'you'],
     stories: [], photos: [], sources: [], isAncestor: true,
   },
   'david-mackay': {
     id: 'david-mackay', name: 'David Mackay',
-    born: '1993', died: '', branch: 'mackay', location: '',
-    descriptor: 'Elder brother of Gun',
-    bio: 'Elder son of Anne Newman and Mark Mackay.',
+    born: '1993', died: '', branch: 'mackay', location: 'Australia',
+    descriptor: 'Elder brother of Jack; father of Theo and Arty',
+    bio: 'Elder son of Anne Newman and Mark Mackay. Father of Theodore (2020) and Arty (2022).',
     parents: ['anne-newman', 'mark-mackay'],
+    spouse: [], children: ['theodore-mackay', 'arty-mackay'],
+    stories: [], photos: [], sources: [],
+  },
+  'theodore-mackay': {
+    id: 'theodore-mackay', name: 'Theodore Mackay',
+    nicknames: ['Theo'],
+    born: '2020', died: '', branch: 'mackay', location: 'Australia',
+    descriptor: 'Elder son of David Mackay',
+    bio: 'Born 2020, elder child of David Mackay.',
+    parents: ['david-mackay'],
+    spouse: [], children: [], stories: [], photos: [], sources: [],
+  },
+  'arty-mackay': {
+    id: 'arty-mackay', name: 'Arty Mackay',
+    born: '2022', died: '', branch: 'mackay', location: 'Australia',
+    descriptor: 'Younger son of David Mackay',
+    bio: 'Born 2022, younger child of David Mackay.',
+    parents: ['david-mackay'],
     spouse: [], children: [], stories: [], photos: [], sources: [],
   },
   'you': {
-    id: 'you', name: 'Gun Mackay',
-    born: '1996', died: '', branch: 'mackay', location: '',
+    id: 'you', name: 'Jack Mackay',
+    born: '1996', died: '', branch: 'mackay', location: 'Australia',
     descriptor: 'Younger brother of David',
-    bio: 'Younger son of Anne Newman and Mark Mackay. Edit this entry in src/data/familyData.js to add more.',
+    bio: 'Younger son of Anne Newman and Mark Mackay.',
     parents: ['anne-newman', 'mark-mackay'],
     spouse: [], children: [],
-    stories: [], photos: [], sources: [], isAncestor: true, isViewerDefault: true,
+    stories: [], photos: [], sources: [], isAncestor: true,
   },
 
   // ===== Wider Bray Naylors (group-portrait page) =====
@@ -724,11 +750,11 @@ export const people = {
     id: 'joe-naylor',
     name: 'Joe Naylor',
     born: '7 May 1913', died: 'unknown', branch: 'naylor',
-    location: 'St. Kevin\'s Square, Bray',
+    location: '27 St. Kevin\'s Square, Bray',
     occupation: 'Railway worker, builder, coast-watcher',
     descriptor: 'Featured in the Bray People, 1987',
     bio:
-      "Born 7 May 1913 at St. Kevin's Square, Bray. Nephew of Sammy Naylor. Worked on the railway and in building; served in the coast-watching service during the Second World War. Chairman of the local Rowing Club. Played for Strand Rovers football, rugby with the local club, and performed with the United Bray Entertainers. Interviewed in the Bray People newspaper on 31 July 1987.",
+      "Born 7 May 1913 on the Bray Strand. Lived at 27 St. Kevin's Square, Bray. Nephew of Sammy Naylor. Worked on the railway and in building; served in the coast-watching service during the Second World War. Chairman of the local Rowing Club. Played for Strand Rovers football, rugby with the local club, and performed with the United Bray Entertainers. Sister 'Brody' was still alive at the time of his 1987 newspaper feature. Interviewed in the Bray People newspaper on 31 July 1987.",
     parents: [], spouse: [], children: [],
     stories: [], photos: [], sources: ['bray-people-1987'],
   },
@@ -758,15 +784,19 @@ export const people = {
 };
 
 // ---------- DIRECT-LINE / VIEWER ----------
+// Order: oldest generation alive in the line first, then down to today's children.
 export const viewerCandidates = [
-  { id: 'you', label: 'Gun (me — default)' },
-  { id: 'david-mackay', label: 'David (brother)' },
-  { id: 'anne-newman', label: 'Anne Newman (mum)' },
-  { id: 'peter-newman', label: 'Peter Newman (uncle)' },
-  { id: 'marion-lydia-hughes', label: 'Marion Hughes (grandmother)' },
-  { id: 'bart-edward-naylor-hughes', label: 'Bart Hughes (memoirist)' },
-  { id: 'susan-marjorie-hughes', label: 'Susan Hughes' },
-  { id: 'paul-naylor-hughes', label: 'Paul Hughes' },
+  { id: 'bart-edward-naylor-hughes', label: 'Bart Hughes' },
+  { id: 'marion-lydia-hughes', label: 'Marion Lydia Hughes' },
+  { id: 'susan-marjorie-hughes', label: 'Susan Marjorie Hughes' },
+  { id: 'paul-naylor-hughes', label: 'Paul Naylor Hughes' },
+  { id: 'peter-newman', label: 'Peter Newman' },
+  { id: 'anne-newman', label: 'Anne Newman' },
+  { id: 'naomi-newman', label: 'Naomi Newman' },
+  { id: 'david-mackay', label: 'David Mackay' },
+  { id: 'you', label: 'Jack Mackay' },
+  { id: 'theodore-mackay', label: 'Theodore Mackay' },
+  { id: 'arty-mackay', label: 'Arty Mackay' },
 ];
 
 // Computes the chain of ancestors above a viewer person (recursive).
@@ -799,9 +829,9 @@ export const places = [
     id: 'naylors-cove',
     name: "Naylor's Cove",
     lat: 53.1928, lng: -6.0995,
-    short: 'Leased by Bartholomew Naylor in the late 1890s.',
+    short: 'Leased by Bartholomew Naylor in the late 1880s.',
     body:
-      "A small cove at the foot of Bray Head, leased by the elder Bartholomew Naylor (b. 1852) from the Town Commissioners in the late 1890s. He built bathing huts and a small pier for visitors, plus a granite boat house that still stood in the 1950s. The cove is still marked as Naylor's Cove on old maps of Bray.",
+      "A small cove at the foot of Bray Head, leased by the elder Bartholomew Naylor (b. 1852) from the Town Commissioners in the late 1880s. He built bathing huts and a small pier for visitors, plus a granite boat house that still stood in the 1950s. The cove is still marked as Naylor's Cove on old maps of Bray.",
   },
   {
     id: 'newcourt-cottage',
@@ -853,94 +883,164 @@ export const places = [
     short: 'Where Bob Hughes is buried.',
     body: 'Bob Hughes (1898–1919), RFC/RAF, died of the 1918–19 influenza pandemic and is buried at the war cemetery at Doullens, Northern France.',
   },
+  {
+    id: 'australia',
+    name: 'Australia',
+    lat: -33.8688, lng: 151.2093,
+    short: 'Home of the Newmans and Mackays since after WWII.',
+    body:
+      "Some time after the Second World War, Donald Newman emigrated to Australia with his wife Marion Lydia Hughes — Lydia Naylor's daughter, born in Bray. Their children Peter (1951) and Anne (1962) were raised there, and Anne and her husband Mark Mackay raised their own sons David (1993) and Jack (1996) in Australia in turn. The current generation — Theodore (2020), Arty (2022) and Naomi — are the fourth Australian generation in the line.",
+  },
 ];
 
 // ---------- DOCUMENTS ----------
+// `images` is an ordered list of page scans. First image is the cover thumbnail.
+// Documents with no scan yet leave `images` empty and fall back to the SVG placeholder.
+const SRC = '/images/sources';
 export const documents = [
   {
     id: 'crowther-letter-1999',
     title: 'Letter from Claire Crowther, Bray Cualann Historical Society',
-    date: '1999',
-    image: '/images/placeholder-doc.svg',
-    caption: 'A 1999 letter from the Bray Cualann Historical Society confirming the family\'s long presence in Bray and supplying the early baptism dates.',
+    date: '7 October 1999',
+    caption:
+      "A two-page typed letter from Claire Crowther to Mrs. Sue Tinney, prepared at the Bray Heritage Centre. Confirms the 1878 marriage of Bartholomew Naylor & Mary Anne McMurray at Christ Church, Bray, the 1849 marriage of Samuel Nailor & Elizabeth Whitton at St. Paul's, and lists the children of both marriages with their baptism dates. Highlights mark Lydia Naylor (1892) and the twins Bartholomew & David Henry (1894).",
+    images: [`${SRC}/IMG_3805.jpg`, `${SRC}/IMG_3806.jpg`],
   },
   {
     id: 'memoir-bart-hughes',
     title: 'The Bartholomew Edward Naylor Hughes Memoir',
-    date: '1970s/80s',
-    image: '/images/placeholder-doc.svg',
-    multi: true,
-    caption: 'A typescript family memoir written by Bart Hughes (1917–1977), Lydia\'s son. The first-person voice in most of the family stories. Multi-page document.',
+    date: 'written c. 1980s',
+    caption:
+      "Seventeen typed pages by Bart Hughes (b. 1917), Lydia Naylor's eldest son. Covers the Naylor, Hughes and West families — the cove at Bray Head, the family's move from Dublin to London, his mother's death in 1924, his own boyhood, the choir at Christ Church, Hove, his apprenticeship as a printer at Shaw & Co., and his RAF service through the Battle of Britain and Coastal Command. The first-person voice in most of the family stories.",
+    images: [
+      `${SRC}/IMG_3808.jpg`, // p1
+      `${SRC}/IMG_3809.jpg`, // p2
+      `${SRC}/IMG_3810.jpg`, // p3
+      `${SRC}/IMG_3811.jpg`, // p4
+      `${SRC}/IMG_3812.jpg`, // p5
+      `${SRC}/IMG_3813.jpg`, // p6
+      `${SRC}/IMG_3814.jpg`, // p7
+      `${SRC}/IMG_3815.jpg`, // p8
+      `${SRC}/IMG_3830.jpg`, // p9
+      `${SRC}/IMG_3831.jpg`, // p10
+      `${SRC}/IMG_3832.jpg`, // p11
+      `${SRC}/IMG_3833.jpg`, // p12
+      `${SRC}/IMG_3834.jpg`, // p13
+      `${SRC}/IMG_3835.jpg`, // p14
+      `${SRC}/IMG_3836.jpg`, // p15
+      `${SRC}/IMG_3837.jpg`, // p16
+      `${SRC}/IMG_3829.jpg`, // p17
+    ],
+  },
+  {
+    id: 'family-tree-chart',
+    title: 'All-in-One Family Tree Chart',
+    date: 'compiled by Sue (Hughes) Tinney',
+    caption:
+      "A printed family-tree diagram centred on Bartholomew Edward Naylor Hughes, showing his Naylor grandparents (Bartholomew Naylor 1852 & Mary Anne McMurray and their nine surviving children), the Hughes grandparents (Edward Hughes & Isabella Carroll), the West in-laws (Percy Dudley West & Rosetta Maud Cokes), and Bart's own children Susan Marjorie (1946) and Paul Naylor (1950). Handwritten note from Sue addressed to 'Peter'.",
+    images: [`${SRC}/IMG_3807.jpg`],
   },
   {
     id: 'stpauls-baptisms',
-    title: 'Baptism Register, St. Paul\'s Church, Bray',
-    date: '1801–1894',
-    image: '/images/placeholder-doc.svg',
-    caption: 'Extracts from the baptism register, recording Bartholomew & Anne Naylor\'s children from 1801, Samuel & Elizabeth\'s children from 1849, and the ten children of Bartholomew & Mary Anne from 1878 to 1894.',
+    title: 'Bray Churches Index — Naylor/Nailor entries',
+    date: '1801–1898',
+    caption:
+      "A printout from the Bray Churches Births/Baptisms/Marriages/Burials database, with every Naylor, Nailor and Nailer entry from 1801 to 1898. Pink highlights mark the direct ancestors: Lydia Naylor (b. 16 May 1892, bap. 12 June 1892), Bartholomew Naylor and David Henry Naylor (twins, b. 19 Oct 1894, bap. 2 Dec 1894), all of Newcourt Cottage, Strand.",
+    images: [`${SRC}/IMG_3816.jpg`, `${SRC}/IMG_3817.jpg`],
   },
   {
     id: 'stpauls-marriage-1849',
     title: 'Marriage Register: Samuel Nailor & Elizabeth Whitton',
     date: '1 February 1849',
-    image: '/images/placeholder-doc.svg',
-    caption: 'St. Paul\'s Church, Bray. Witnesses: Samuel Little Stevenson and Mary N. Hill. The spelling "Nailor" appears here.',
+    caption:
+      "St. Paul's Church, Bray. Witnesses: Samuel Little Stevenson and Mary N. Hill. The spelling \"Nailor\" appears here. Transcribed in the Crowther letter — original register not yet photographed.",
+    images: [`${SRC}/IMG_3806.jpg`],
   },
   {
     id: 'christ-church-marriage-1878',
     title: 'Marriage Register: Bartholomew Naylor & Mary Anne McMurray',
     date: '3 July 1878',
-    image: '/images/placeholder-doc.svg',
-    caption: 'Christ Church, Bray. Mary Anne is listed as a servant of 2 Florence Terrace, Bray.',
+    caption:
+      "Christ Church, Bray. Mary Anne is listed as a servant of 2 Florence Terrace, Bray. Transcribed in the Crowther letter — original register not yet photographed.",
+    images: [`${SRC}/IMG_3805.jpg`],
   },
   {
     id: 'census-1901',
     title: '1901 Census of Ireland — Dock Terrace, Bray',
     date: '1901',
-    image: '/images/placeholder-doc.svg',
-    caption: 'The household at house #22 Dock Terrace — one of twenty houses with 111 people between them.',
+    caption:
+      "Surname index of all 111 people living in the twenty houses of Dock Terrace, Bray. The Naylors are at house #22 (highlighted). Neighbours include Barnes (#21), Curran, Dowling and Fortune (#23).",
+    images: [`${SRC}/IMG_3818.jpg`],
   },
   {
     id: 'cwgc-bart-naylor',
     title: 'Commonwealth War Graves: L/Cpl Bartholomew Naylor',
     date: '13 November 1916',
-    image: '/images/placeholder-doc.svg',
-    caption: 'Killed in action at the Somme. Commemorated on the Thiepval Memorial. Named as the son of Mrs Mary Anne Naylor, Newcourt Cottage, Bray.',
+    caption:
+      "Bray War Memorial entry. L/Cpl Bartholomew Naylor, 26961, 10th Bn. Royal Dublin Fusiliers, died 13.11.1916, age 22. Son of Mrs Mary Anne Naylor, Newcourt Cottage, Bray, Co. Wicklow. Thiepval Memorial, Somme, France.",
+    images: [`${SRC}/IMG_3828.jpg`],
   },
   {
     id: 'bray-war-memorial',
     title: 'Bray War Memorial: First World War Special Edition',
     date: '1914–1918',
-    image: '/images/placeholder-doc.svg',
-    caption: 'L/Cpl Bart Naylor\'s entry on the Bray War Memorial.',
+    caption:
+      "The page listing five Bray-born men killed in 1916–1918, including L/Cpl Bart Naylor (13 Nov 1916), Sgt John McKenna of the Gordon Highlanders, Signaller Thomas Neill, Pte Robert Howlett Nicholson and Pte James Nolan.",
+    images: [`${SRC}/IMG_3828.jpg`],
   },
   {
     id: 'bray-people-1987',
-    title: 'Bray People — "Meet the Long Servers" by Jim Brophy',
-    date: '24 & 31 July 1987',
-    image: '/images/placeholder-doc.svg',
-    caption: 'Newspaper feature on Joe Naylor (b. 1913), nephew of Sammy Naylor.',
+    title: 'Bray People — "Joe is still a very lively man"',
+    date: '31 July 1987',
+    caption:
+      'Newspaper feature by Jim Brophy on Joe Naylor, then 74, of 27 St. Kevin\'s Square, Bray. Born 7 May 1913 on the Strand. Joined the coast-watching service in 1939, served through WWII, then a long stint with Bray Rowing Club and the United Bray Entertainers. Mentions his uncle Sammy Naylor ("Upper deck, Sir") and the late Tom Naylor. Companion piece "Anne\'s many vivid memories of Bray" appears alongside.',
+    images: [`${SRC}/IMG_3822.jpg`, `${SRC}/IMG_3823.jpg`, `${SRC}/IMG_3824.jpg`],
   },
   {
     id: 'pictorial-history-bray',
     title: 'A Pictorial History of Bray (Cairns & Gallagher)',
     date: 'Vol. 1: The Seafront and Environs',
-    image: '/images/placeholder-doc.svg',
-    caption: 'Photographs of Sam Naylor Snr "The Fumbler", the four Rose Cottage brothers, and Naylor\'s Cove.',
+    caption:
+      'Extracts from Henry Cairns and Owen Gallagher\'s pictorial history. Includes the Bray Cove Swimming Club / Naylor\'s Cove article, the Sam Naylor Snr profile and his 1923 fishing licence, the Sam Naylor Jr / Walmer Castle story, the 1860 harbour map, photographs of Naylor\'s Cove in the 1890s and 1928, the old bridge that collapsed in 1983, the 1937 Bray Cove SC membership card, and many group portraits of Bray fishermen and the Strand community.',
+    images: [
+      `${SRC}/IMG_3839.jpg`, // book cover
+      `${SRC}/IMG_3819.jpg`, // Bray Cove Swimming Club / Naylor's Cove article
+      `${SRC}/IMG_3825.jpg`, // The Cove in its glory / 1928 before the pools
+      `${SRC}/IMG_3826.jpg`, // 1860 harbour map
+      `${SRC}/IMG_3827.jpg`, // Naylor's Cove in the 1890s
+      `${SRC}/IMG_3838.jpg`, // 1937 Bray Cove SC membership card
+      `${SRC}/IMG_3820.jpg`, // ALCASHIA + crew portraits c.1920
+      `${SRC}/IMG_3840.jpg`, // Sam Naylor Junior — Walmer Castle 1941
+      `${SRC}/IMG_3841.jpg`, // Sam Naylor + Sheila Ryan + Dockside Recital
+      `${SRC}/IMG_3842.jpg`, // Sam Naylor Snr + 1923 fishing licence
+      `${SRC}/IMG_3843.jpg`, // group photos: Snowie Gallagher, Sam Naylor, etc.
+      `${SRC}/IMG_3844.jpg`, // Old bridge collapse 1983
+      `${SRC}/IMG_3845.jpg`, // Bill "Cody" Naylor + Sam Naylor at Dock Terrace
+    ],
+  },
+  {
+    id: 'pictorial-memories-bray',
+    title: 'Pictorial Memories of Bray — "Little Bray"',
+    date: 'Chapter 1',
+    caption:
+      "Page from another Bray local-history book. Portraits of Rose Naylor (\"last of the Naylors\") and Andy Donnelly; the 1959 Bray Christian Mothers' outing to Mellifont Abbey; Walter Slater (Visitor of the Year, 1962); the Moran family of 72 Beech Road, c.1953.",
+    images: [`${SRC}/IMG_3821.jpg`],
   },
   {
     id: 'family-bible-hughes',
     title: 'Hughes Family Bible',
     date: 'from 1881',
-    image: '/images/placeholder-doc.svg',
-    caption: 'The Hughes family Bible records Edward Hughes and Isabella Carroll\'s marriage on 6 April 1881 in Dublin, and the births and deaths of their six children.',
+    caption:
+      "Records Edward Hughes and Isabella Carroll's marriage on 6 April 1881 in Dublin, and the births and deaths of their six children: Annie (1882–1886), Edward Francis (1883–1916), Maria Florence (1885–1886), Elizabeth \"Aunt Lillie\" (1886–1970), William John (1890) and Robert Frederick (1898–1919). The Bible itself has not been photographed; this page of Bart Hughes's memoir transcribes the Bible entries verbatim — \"This is taken from the family bible, and is the earliest date that I can go back to.\"",
+    images: [`${SRC}/IMG_3812.jpg`],
   },
   {
     id: 'norwood-war-memorial',
     title: 'Norwood Cemetery War Memorial',
     date: '1914–1918',
-    image: '/images/placeholder-doc.svg',
-    caption: 'Edward Francis Hughes is named on the war memorial at the gates of Norwood Cemetery in South London.',
+    caption:
+      "Edward Francis Hughes (1883–1916), Lydia Naylor's brother-in-law, is named on the war memorial at the gates of West Norwood Cemetery, South London. We don't have a photograph of the memorial itself — the source for it is page 6 of Bart Hughes's memoir, in which he writes: \"…sadly he died on the 16th November 1916, he was in the army, and is buried in Norwood Cemetary in South London. His name is to be found on the War Memorial just inside the gates to the cemetary.\"",
+    images: [`${SRC}/IMG_3813.jpg`],
   },
 ];
 
@@ -979,7 +1079,7 @@ export const stories = {
     title: 'Naylor\'s Cove and the Regatta Medals',
     people: ['bartholomew-naylor-1852', 'bartholomew-naylor-1894', 'david-henry-naylor-1894'],
     body:
-      "The elder Bartholomew (b. 1852) leased a cove at the foot of Bray Head from the Town Commissioners in the late 1890s. He built bathing huts, a small pier and a granite boat house, and built racing boats for Bray's famous regattas. The cove is still called Naylor's Cove on old maps.\n\nHis twin sons Bart and David were both celebrated oarsmen. One of them won a gold regatta medal — last known to have been held by William John Hughes, who gave it to his daughter Marion.\n\nA note on confusion: the Bray Cove Swimming Club book conflates the two Bartholomews, suggesting young Bart leased the cove. He was four at the time. The lease belongs to his grandfather.",
+      "The elder Bartholomew (b. 1852) leased a cove at the foot of Bray Head from the Town Commissioners in the late 1880s. He built bathing huts, a small pier and a granite boat house, and built racing boats for Bray's famous regattas. The cove is still called Naylor's Cove on old maps.\n\nHis twin sons Bart and David were both celebrated oarsmen. One of them won a gold regatta medal — last known to have been held by William John Hughes, who gave it to his daughter Marion.\n\nA note on confusion: the Bray Cove Swimming Club book conflates the two Bartholomews, suggesting young Bart leased the cove. He was four at the time. The lease belongs to his grandfather.",
   },
   'voyage-to-australia': {
     id: 'voyage-to-australia',
@@ -1033,7 +1133,7 @@ export const timeline = [
   { year: 1884, type: 'family', label: 'Samuel Naylor born (later emigrated to America)', personId: 'samuel-naylor-1884' },
   { year: 1885, type: 'family', label: 'Marion McMurray Naylor born', personId: 'marion-mcmurray-naylor-1885' },
   { year: 1889, type: 'family', label: 'William John Hughes born', personId: 'william-john-hughes' },
-  { year: 1890, type: 'family', label: 'Late 1890s: Bartholomew Naylor leases the cove at Bray Head', personId: 'bartholomew-naylor-1852' },
+  { year: 1888, type: 'family', label: 'Late 1880s: Bartholomew Naylor leases the cove at Bray Head', personId: 'bartholomew-naylor-1852' },
   { year: 1892, type: 'family', label: 'Lydia Naylor born', personId: 'lydia-naylor-1892' },
   { year: 1894, type: 'family', label: 'Hughes family moves from Dublin to England', personId: 'edward-hughes' },
   { year: 1894, type: 'family', label: 'Twins Bart and David Henry Naylor born', personId: 'bartholomew-naylor-1894' },
@@ -1050,12 +1150,20 @@ export const timeline = [
   { year: 1924, type: 'family', label: 'Lydia Naylor dies, aged 32', personId: 'lydia-naylor-1892' },
   { year: 1939, type: 'world', label: 'Second World War begins' },
   { year: 1941, type: 'family', label: 'Samuel Naylor Jr killed: Walmer Castle bombed', personId: 'samuel-naylor-jr-ww2' },
+  { year: 1945, type: 'world', label: 'Second World War ends' },
+  { year: 1950, type: 'family', label: 'Donald & Marion Newman emigrate to Australia (sometime after WWII)', personId: 'donald-newman' },
   { year: 1954, type: 'family', label: 'William John Hughes dies', personId: 'william-john-hughes' },
   { year: 1970, type: 'family', label: 'Aunt Lillie dies; family leaves Crawthew Grove', personId: 'aunt-lillie-hughes' },
   { year: 1977, type: 'family', label: 'Bart Hughes dies (author of the family memoir)', personId: 'bart-edward-naylor-hughes' },
+  { year: 1951, type: 'family', label: 'Peter Newman born', personId: 'peter-newman' },
+  { year: 1962, type: 'family', label: 'Anne Newman born', personId: 'anne-newman' },
   { year: 1987, type: 'family', label: 'Joe Naylor interviewed in the Bray People', personId: 'joe-naylor' },
+  { year: 1993, type: 'family', label: 'David Mackay born', personId: 'david-mackay' },
+  { year: 1996, type: 'family', label: 'Jack Mackay born', personId: 'you' },
   { year: 1999, type: 'family', label: 'Claire Crowther / Bray Cualann Historical Society letter' },
   { year: 2009, type: 'family', label: 'Marjorie Rose West dies', personId: 'marjorie-rose-west' },
+  { year: 2020, type: 'family', label: 'Theodore "Theo" Mackay born', personId: 'theodore-mackay' },
+  { year: 2022, type: 'family', label: 'Arty Mackay born', personId: 'arty-mackay' },
 ];
 
 // ---------- BRANCH STYLES ----------

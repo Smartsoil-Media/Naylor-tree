@@ -22,3 +22,12 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Original HEIC source photos & local scratch — these are large (~230MB total)
+# and the web-ready JPGs in public/images/sources/ are what the deployed site
+# actually uses. Keep context.md tracked though — it's the digest of these.
+source documents/*
+!source documents/context.md
+
+# One-off screenshot dropped at the repo root
+tree.png

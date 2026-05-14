@@ -45,6 +45,7 @@ export default function TreeNode({ nodeDatum, toggleNode, onSelect }) {
         x={0}
         y={-height / 2 + 24}
         textAnchor="middle"
+        stroke="none"
         style={{
           fontFamily: 'Inter, system-ui, sans-serif',
           fontSize: 14,
@@ -59,6 +60,7 @@ export default function TreeNode({ nodeDatum, toggleNode, onSelect }) {
           x={0}
           y={-height / 2 + 44}
           textAnchor="middle"
+          stroke="none"
           style={{
             fontFamily: 'Inter, system-ui, sans-serif',
             fontSize: 11,
@@ -74,6 +76,7 @@ export default function TreeNode({ nodeDatum, toggleNode, onSelect }) {
           x={0}
           y={-height / 2 + 62}
           textAnchor="middle"
+          stroke="none"
           style={{
             fontFamily: 'Inter, system-ui, sans-serif',
             fontSize: 10.5,
@@ -96,6 +99,7 @@ export default function TreeNode({ nodeDatum, toggleNode, onSelect }) {
           <text
             textAnchor="middle"
             y={4}
+            stroke="none"
             style={{ fontSize: 13, fill: '#fff', fontWeight: 700, fontFamily: 'Inter, sans-serif' }}
           >
             {isCollapsed ? '+' : '−'}
