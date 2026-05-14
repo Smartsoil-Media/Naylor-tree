@@ -639,9 +639,9 @@ export const people = {
     id: 'anne-newman', name: 'Anne Newman',
     born: 'unknown', died: '', branch: 'newman', location: 'England',
     descriptor: 'Daughter of Marion and Donald',
-    bio: 'Eldest child of Marion Lydia Hughes and Donald Newman. Married Mark Mackay.',
+    bio: 'Eldest child of Marion Lydia Hughes and Donald Newman. Married Mark Mackay. Mother of David and Jack.',
     parents: ['marion-lydia-hughes', 'donald-newman'],
-    spouse: ['mark-mackay'], children: ['you'],
+    spouse: ['mark-mackay'], children: ['david-mackay', 'you'],
     stories: [], photos: [], sources: [], isAncestor: true,
   },
   'peter-newman': {
@@ -655,26 +655,27 @@ export const people = {
   'mark-mackay': {
     id: 'mark-mackay', name: 'Mark Mackay',
     born: 'unknown', died: '', branch: 'mackay', location: 'England',
-    descriptor: 'Father',
-    bio: 'Married Anne Newman.',
-    parents: [], spouse: ['anne-newman'], children: ['you'],
+    descriptor: 'Father of David and Jack',
+    bio: 'Married Anne Newman. Father of David (1993) and Jack (1996).',
+    parents: [], spouse: ['anne-newman'], children: ['david-mackay', 'you'],
     stories: [], photos: [], sources: [], isAncestor: true,
   },
-  'you': {
-    id: 'you', name: 'You',
-    born: '', died: '', branch: 'mackay', location: '',
-    descriptor: 'The reader — current generation',
-    bio: 'You, and your partner David. Edit this entry in src/data/familyData.js to add your own name, dates and bio.',
+  'david-mackay': {
+    id: 'david-mackay', name: 'David Mackay',
+    born: '1993', died: '', branch: 'mackay', location: '',
+    descriptor: 'Elder brother of Jack',
+    bio: 'Elder son of Anne Newman and Mark Mackay.',
     parents: ['anne-newman', 'mark-mackay'],
-    spouse: ['david-partner'], children: [],
-    stories: [], photos: [], sources: [], isAncestor: true, isViewerDefault: true,
+    spouse: [], children: [], stories: [], photos: [], sources: [],
   },
-  'david-partner': {
-    id: 'david-partner', name: 'David',
-    born: '', died: '', branch: 'mackay', location: '',
-    descriptor: 'Partner',
-    bio: '',
-    parents: [], spouse: ['you'], children: [], stories: [], photos: [], sources: [],
+  'you': {
+    id: 'you', name: 'Jack Mackay',
+    born: '1996', died: '', branch: 'mackay', location: '',
+    descriptor: 'Younger brother of David',
+    bio: 'Younger son of Anne Newman and Mark Mackay. Edit this entry in src/data/familyData.js to add more.',
+    parents: ['anne-newman', 'mark-mackay'],
+    spouse: [], children: [],
+    stories: [], photos: [], sources: [], isAncestor: true, isViewerDefault: true,
   },
 
   // ===== Wider Bray Naylors (group-portrait page) =====
@@ -758,9 +759,10 @@ export const people = {
 
 // ---------- DIRECT-LINE / VIEWER ----------
 export const viewerCandidates = [
-  { id: 'you', label: 'Me (default)' },
-  { id: 'anne-newman', label: 'Anne Newman' },
-  { id: 'peter-newman', label: 'Peter Newman' },
+  { id: 'you', label: 'Jack (me — default)' },
+  { id: 'david-mackay', label: 'David (brother)' },
+  { id: 'anne-newman', label: 'Anne Newman (mum)' },
+  { id: 'peter-newman', label: 'Peter Newman (uncle)' },
   { id: 'marion-lydia-hughes', label: 'Marion Hughes (grandmother)' },
   { id: 'bart-edward-naylor-hughes', label: 'Bart Hughes (memoirist)' },
   { id: 'susan-marjorie-hughes', label: 'Susan Hughes' },
