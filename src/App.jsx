@@ -2,6 +2,7 @@ import { Routes, Route, Navigate } from 'react-router-dom'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import TreeView from './views/TreeView'
+import StoryView from './views/StoryView'
 import PeopleView from './views/PeopleView'
 import PersonView from './views/PersonView'
 import PlacesView from './views/PlacesView'
@@ -18,6 +19,7 @@ export default function App() {
         <main className="flex-1">
           <Routes>
             <Route path="/" element={<TreeView />} />
+            <Route path="/story" element={<StoryView />} />
             <Route path="/people" element={<PeopleView />} />
             <Route path="/people/:id" element={<PersonView />} />
             <Route path="/places" element={<PlacesView />} />

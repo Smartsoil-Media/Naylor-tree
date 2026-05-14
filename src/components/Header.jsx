@@ -4,6 +4,7 @@ import { useViewer } from '../lib/viewerContext'
 
 const NAV = [
   { to: '/', label: 'Tree', end: true },
+  { to: '/story', label: 'Story' },
   { to: '/people', label: 'People' },
   { to: '/places', label: 'Places' },
   { to: '/documents', label: 'Documents' },

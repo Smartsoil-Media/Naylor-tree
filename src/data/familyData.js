@@ -655,21 +655,21 @@ export const people = {
   'mark-mackay': {
     id: 'mark-mackay', name: 'Mark Mackay',
     born: 'unknown', died: '', branch: 'mackay', location: 'England',
-    descriptor: 'Father of David and Jack',
-    bio: 'Married Anne Newman. Father of David (1993) and Jack (1996).',
+    descriptor: 'Father of David and Gun',
+    bio: 'Married Anne Newman. Father of David (1993) and Gun (1996).',
     parents: [], spouse: ['anne-newman'], children: ['david-mackay', 'you'],
     stories: [], photos: [], sources: [], isAncestor: true,
   },
   'david-mackay': {
     id: 'david-mackay', name: 'David Mackay',
     born: '1993', died: '', branch: 'mackay', location: '',
-    descriptor: 'Elder brother of Jack',
+    descriptor: 'Elder brother of Gun',
     bio: 'Elder son of Anne Newman and Mark Mackay.',
     parents: ['anne-newman', 'mark-mackay'],
     spouse: [], children: [], stories: [], photos: [], sources: [],
   },
   'you': {
-    id: 'you', name: 'Jack Mackay',
+    id: 'you', name: 'Gun Mackay',
     born: '1996', died: '', branch: 'mackay', location: '',
     descriptor: 'Younger brother of David',
     bio: 'Younger son of Anne Newman and Mark Mackay. Edit this entry in src/data/familyData.js to add more.',
@@ -759,7 +759,7 @@ export const people = {
 
 // ---------- DIRECT-LINE / VIEWER ----------
 export const viewerCandidates = [
-  { id: 'you', label: 'Jack (me — default)' },
+  { id: 'you', label: 'Gun (me — default)' },
   { id: 'david-mackay', label: 'David (brother)' },
   { id: 'anne-newman', label: 'Anne Newman (mum)' },
   { id: 'peter-newman', label: 'Peter Newman (uncle)' },
