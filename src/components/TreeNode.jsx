@@ -48,9 +48,8 @@ export default function TreeNode({ nodeDatum, toggleNode, onSelect }) {
         style={{
           fontFamily: 'Inter, system-ui, sans-serif',
           fontSize: 14,
-          fontWeight: 600,
+          fontWeight: 400,
           fill: '#241b10',
-          letterSpacing: '-0.01em',
         }}
       >
         {truncate(nodeDatum.name, 28)}
@@ -63,7 +62,7 @@ export default function TreeNode({ nodeDatum, toggleNode, onSelect }) {
           style={{
             fontFamily: 'Inter, system-ui, sans-serif',
             fontSize: 11,
-            fontWeight: 500,
+            fontWeight: 400,
             fill: '#6e5333',
           }}
         >
