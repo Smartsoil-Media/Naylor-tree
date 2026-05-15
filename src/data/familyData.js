@@ -643,6 +643,10 @@ export const people = {
     parents: ['marion-lydia-hughes', 'donald-newman'],
     spouse: ['mark-mackay'], children: ['luke-buxton', 'sara-buxton', 'david-mackay', 'you'],
     stories: [], photos: [], sources: [], isAncestor: true,
+    media: [
+      { src: '/images/people/anne-with-children.jpg', type: 'image', caption: 'Anne with her four children — David, Sara, Luke and Jack.' },
+      { src: '/images/people/anne-newman.jpg', type: 'image', caption: 'On the beach at sunset, May 2026.' },
+    ],
   },
   'peter-newman': {
     id: 'peter-newman', name: 'Peter Newman',
@@ -698,9 +702,20 @@ export const people = {
     id: 'david-mackay', name: 'David Mackay',
     born: '1993', died: '', branch: 'mackay', location: 'Australia',
     descriptor: 'Elder brother of Jack; father of Theo and Arty',
-    bio: 'Elder son of Anne Newman and Mark Mackay. Father of Theodore (2020) and Arty (2022).',
+    bio: 'Elder son of Anne Newman and Mark Mackay. Father of Theodore (2020) and Arty (2022). Married Grace Bandcroft on 18 April 2026.',
     parents: ['anne-newman', 'mark-mackay'],
-    spouse: [], children: ['theodore-mackay', 'arty-mackay'],
+    spouse: ['grace-bandcroft'], children: ['theodore-mackay', 'arty-mackay'],
+    stories: [], photos: [], sources: [],
+    media: [
+      { src: '/images/people/anne-with-children.jpg', type: 'image', caption: 'Far left, with his mother and siblings.' },
+    ],
+  },
+  'grace-bandcroft': {
+    id: 'grace-bandcroft', name: 'Grace Bandcroft',
+    born: 'unknown', died: '', branch: 'bandcroft', location: 'Australia',
+    descriptor: 'Married David Mackay',
+    bio: 'Married David Mackay on 18 April 2026.',
+    parents: [], spouse: ['david-mackay'], children: [],
     stories: [], photos: [], sources: [],
   },
   'theodore-mackay': {
@@ -711,6 +726,9 @@ export const people = {
     bio: 'Born 2020, elder child of David Mackay.',
     parents: ['david-mackay'],
     spouse: [], children: [], stories: [], photos: [], sources: [],
+    media: [
+      { src: '/images/people/oden-theodore.mp4', type: 'video', caption: "With Oden at David and Grace's wedding, 18 April 2026." },
+    ],
   },
   'arty-mackay': {
     id: 'arty-mackay', name: 'Arty Mackay',
@@ -719,6 +737,9 @@ export const people = {
     bio: 'Born 2022, younger child of David Mackay.',
     parents: ['david-mackay'],
     spouse: [], children: [], stories: [], photos: [], sources: [],
+    media: [
+      { src: '/images/people/arty-mackay.jpg', type: 'image', caption: 'On the back of the ute, April 2026.' },
+    ],
   },
   'you': {
     id: 'you', name: 'Jack Mackay',
@@ -728,6 +749,10 @@ export const people = {
     parents: ['anne-newman', 'mark-mackay'],
     spouse: [], children: [],
     stories: [], photos: [], sources: [], isAncestor: true,
+    media: [
+      { src: '/images/people/jack-mackay.jpg', type: 'image', caption: "At David and Grace's wedding with his dog Kimab, 18 April 2026." },
+      { src: '/images/people/anne-with-children.jpg', type: 'image', caption: 'Far right, with his mother and siblings.' },
+    ],
   },
   'luke-buxton': {
     id: 'luke-buxton', name: 'Luke Buxton',
@@ -737,6 +762,9 @@ export const people = {
     parents: ['anne-newman'],
     spouse: [], children: [],
     stories: [], photos: [], sources: [],
+    media: [
+      { src: '/images/people/anne-with-children.jpg', type: 'image', caption: 'Second from right, with his mother and siblings.' },
+    ],
   },
   'sara-buxton': {
     id: 'sara-buxton', name: 'Sara Buxton',
@@ -746,6 +774,9 @@ export const people = {
     parents: ['anne-newman'],
     spouse: [], children: ['dru-urban', 'oden-figet'],
     stories: [], photos: [], sources: [],
+    media: [
+      { src: '/images/people/anne-with-children.jpg', type: 'image', caption: 'Second from left, with her mother and brothers.' },
+    ],
   },
   'dru-urban': {
     id: 'dru-urban', name: 'Dru Urban',
@@ -755,6 +786,9 @@ export const people = {
     parents: ['sara-buxton'],
     spouse: [], children: [],
     stories: [], photos: [], sources: [],
+    media: [
+      { src: '/images/people/dru-urban.jpg', type: 'image', caption: "Napping next to Jack's dog Kimab." },
+    ],
   },
   'oden-figet': {
     id: 'oden-figet', name: 'Oden Figet',
@@ -764,6 +798,9 @@ export const people = {
     parents: ['sara-buxton'],
     spouse: [], children: [],
     stories: [], photos: [], sources: [],
+    media: [
+      { src: '/images/people/oden-theodore.mp4', type: 'video', caption: "With his cousin Theo at David and Grace's wedding, 18 April 2026." },
+    ],
   },
 
   // ===== Wider Bray Naylors (group-portrait page) =====
@@ -1470,6 +1507,7 @@ export const timeline = [
   { year: 2009, type: 'family', label: 'Marjorie Rose West dies', personId: 'marjorie-rose-west' },
   { year: 2020, type: 'family', label: 'Theodore "Theo" Mackay born', personId: 'theodore-mackay' },
   { year: 2022, type: 'family', label: 'Arty Mackay born', personId: 'arty-mackay' },
+  { year: 2026, type: 'family', label: 'David Mackay marries Grace Bandcroft', personId: 'david-mackay' },
 ];
 
 // ---------- BRANCH STYLES ----------
@@ -1480,6 +1518,7 @@ export const branchStyle = {
   mackay: { color: '#8a4a5a', label: 'Mackay' },
   buxton: { color: '#506b7e', label: 'Buxton' },
   bauer: { color: '#4a3a6b', label: 'Bauer' },
+  bandcroft: { color: '#9e6675', label: 'Bandcroft' },
 };
 
 // ---------- HELPERS ----------

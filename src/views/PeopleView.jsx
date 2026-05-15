@@ -9,6 +9,9 @@ const BRANCHES = [
   { id: 'hughes', label: 'Hughes' },
   { id: 'newman', label: 'Newman' },
   { id: 'mackay', label: 'Mackay' },
+  { id: 'buxton', label: 'Buxton' },
+  { id: 'bauer', label: 'Bauer' },
+  { id: 'bandcroft', label: 'Bandcroft' },
 ]
 
 export default function PeopleView() {

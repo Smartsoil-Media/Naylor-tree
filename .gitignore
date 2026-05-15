@@ -29,5 +29,8 @@ dist-ssr
 source documents/*
 !source documents/context.md
 
+# Original family media (HEIC/MOV) — optimised copies live in public/images/people/
+family_images/
+
 # One-off screenshot dropped at the repo root
 tree.png

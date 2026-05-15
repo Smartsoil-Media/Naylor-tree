@@ -84,6 +84,17 @@ export default function PersonView() {
         </section>
       )}
 
+      {person.media?.length > 0 && (
+        <section className="mt-8">
+          <h2 className="font-serif text-2xl text-sepia-900">Photos &amp; video</h2>
+          <div className="mt-3 grid grid-cols-1 sm:grid-cols-2 gap-5">
+            {person.media.map((m, i) => (
+              <MediaTile key={i} item={m} alt={person.name} />
+            ))}
+          </div>
+        </section>
+      )}
+
       {(parents.length + spouses.length + children.length + siblings.length) > 0 && (
         <section className="mt-8">
           <h2 className="font-serif text-2xl text-sepia-900">Relationships</h2>
@@ -126,6 +137,36 @@ export default function PersonView() {
         </section>
       )}
     </article>
+  )
+}
+
+function MediaTile({ item, alt }) {
+  return (
+    <figure className="album-photo">
+      <div className="bg-sepia-900 overflow-hidden rounded-sm">
+        {item.type === 'video' ? (
+          <video
+            src={item.src}
+            controls
+            playsInline
+            preload="metadata"
+            className="w-full h-auto block"
+          />
+        ) : (
+          <img
+            src={item.src}
+            alt={item.caption || alt}
+            loading="lazy"
+            className="w-full h-auto block"
+          />
+        )}
+      </div>
+      {item.caption && (
+        <figcaption className="mt-2 px-1 text-sm italic text-sepia-600 font-serif leading-snug">
+          {item.caption}
+        </figcaption>
+      )}
+    </figure>
   )
 }
 
