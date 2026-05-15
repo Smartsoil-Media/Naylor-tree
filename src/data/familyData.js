@@ -639,25 +639,51 @@ export const people = {
     id: 'anne-newman', name: 'Anne Newman',
     born: '1962', died: '', branch: 'newman', location: 'Australia',
     descriptor: 'Daughter of Marion and Donald',
-    bio: 'Born 1962 in Australia, after Marion and Donald had emigrated. Younger child of Marion Lydia Hughes and Donald Newman. Married Mark Mackay. Mother of David and Jack.',
+    bio: "Born 1962 in Australia, after Marion and Donald had emigrated. Younger child of Marion Lydia Hughes and Donald Newman.\n\nFrom her first marriage, two children: Luke Buxton (b. 1984) and Sara Buxton (b. 1988). Later married Mark Mackay and had two more sons: David (b. 1993) and Jack (b. 1996).",
     parents: ['marion-lydia-hughes', 'donald-newman'],
-    spouse: ['mark-mackay'], children: ['david-mackay', 'you'],
+    spouse: ['mark-mackay'], children: ['luke-buxton', 'sara-buxton', 'david-mackay', 'you'],
     stories: [], photos: [], sources: [], isAncestor: true,
   },
   'peter-newman': {
     id: 'peter-newman', name: 'Peter Newman',
     born: '1951', died: '', branch: 'newman', location: 'Australia',
     descriptor: 'Son of Marion and Donald',
-    bio: 'Born 1951, son of Marion Lydia Hughes and Donald Newman. Raised in Australia after his parents emigrated. Father of Naomi.',
+    bio: 'Born 1951, son of Marion Lydia Hughes and Donald Newman. Raised in Australia after his parents emigrated. Father of Naomi, who married Michael Bauer.',
     parents: ['marion-lydia-hughes', 'donald-newman'],
     spouse: [], children: ['naomi-newman'], stories: [], photos: [], sources: [],
   },
   'naomi-newman': {
-    id: 'naomi-newman', name: 'Naomi Newman',
+    id: 'naomi-newman', name: 'Naomi Bauer',
+    nicknames: ['née Newman'],
     born: 'unknown', died: '', branch: 'newman', location: 'Australia',
-    descriptor: 'Daughter of Peter',
-    bio: 'Daughter of Peter Newman; granddaughter of Marion Lydia Hughes and Donald Newman.',
+    descriptor: 'Daughter of Peter; mother of Jasmin and Alex',
+    bio: 'Daughter of Peter Newman; granddaughter of Marion Lydia Hughes and Donald Newman. Married Michael Bauer (from Germany); two children together, Jasmin and Alex.',
     parents: ['peter-newman'],
+    spouse: ['michael-bauer'], children: ['jasmin-bauer', 'alex-bauer'],
+    stories: [], photos: [], sources: [],
+  },
+  'michael-bauer': {
+    id: 'michael-bauer', name: 'Michael Bauer',
+    born: 'unknown', died: '', branch: 'bauer', location: 'Germany',
+    descriptor: 'Married Naomi; father of Jasmin and Alex',
+    bio: 'From Germany. Married Naomi Newman; father of Jasmin and Alex.',
+    parents: [], spouse: ['naomi-newman'], children: ['jasmin-bauer', 'alex-bauer'],
+    stories: [], photos: [], sources: [],
+  },
+  'jasmin-bauer': {
+    id: 'jasmin-bauer', name: 'Jasmin Bauer',
+    born: 'unknown', died: '', branch: 'bauer', location: '',
+    descriptor: 'Child of Naomi and Michael',
+    bio: 'Child of Naomi Bauer (née Newman) and Michael Bauer.',
+    parents: ['naomi-newman', 'michael-bauer'],
+    spouse: [], children: [], stories: [], photos: [], sources: [],
+  },
+  'alex-bauer': {
+    id: 'alex-bauer', name: 'Alex Bauer',
+    born: 'unknown', died: '', branch: 'bauer', location: '',
+    descriptor: 'Child of Naomi and Michael',
+    bio: 'Child of Naomi Bauer (née Newman) and Michael Bauer.',
+    parents: ['naomi-newman', 'michael-bauer'],
     spouse: [], children: [], stories: [], photos: [], sources: [],
   },
   'mark-mackay': {
@@ -702,6 +728,42 @@ export const people = {
     parents: ['anne-newman', 'mark-mackay'],
     spouse: [], children: [],
     stories: [], photos: [], sources: [], isAncestor: true,
+  },
+  'luke-buxton': {
+    id: 'luke-buxton', name: 'Luke Buxton',
+    born: '1984', died: '', branch: 'buxton', location: 'Australia',
+    descriptor: "Anne's eldest, from her first marriage",
+    bio: "Born 1984 in Australia. Eldest of Anne's children, from her first marriage. Half-brother to Sara, David and Jack.",
+    parents: ['anne-newman'],
+    spouse: [], children: [],
+    stories: [], photos: [], sources: [],
+  },
+  'sara-buxton': {
+    id: 'sara-buxton', name: 'Sara Buxton',
+    born: '1988', died: '', branch: 'buxton', location: 'Australia',
+    descriptor: 'Mother of Dru and Oden',
+    bio: "Born 1988 in Australia, eight years older than her half-brother Jack. From Anne's first marriage. Mother of Dru Urban and Oden Figet.",
+    parents: ['anne-newman'],
+    spouse: [], children: ['dru-urban', 'oden-figet'],
+    stories: [], photos: [], sources: [],
+  },
+  'dru-urban': {
+    id: 'dru-urban', name: 'Dru Urban',
+    born: 'unknown', died: '', branch: 'buxton', location: 'Australia',
+    descriptor: 'Child of Sara Buxton',
+    bio: 'Child of Sara Buxton; grandchild of Anne Newman.',
+    parents: ['sara-buxton'],
+    spouse: [], children: [],
+    stories: [], photos: [], sources: [],
+  },
+  'oden-figet': {
+    id: 'oden-figet', name: 'Oden Figet',
+    born: 'unknown', died: '', branch: 'buxton', location: 'Australia',
+    descriptor: 'Child of Sara Buxton',
+    bio: 'Child of Sara Buxton; grandchild of Anne Newman.',
+    parents: ['sara-buxton'],
+    spouse: [], children: [],
+    stories: [], photos: [], sources: [],
   },
 
   // ===== Wider Bray Naylors (group-portrait page) =====
@@ -786,17 +848,13 @@ export const people = {
 // ---------- DIRECT-LINE / VIEWER ----------
 // Order: oldest generation alive in the line first, then down to today's children.
 export const viewerCandidates = [
-  { id: 'bart-edward-naylor-hughes', label: 'Bart Hughes' },
-  { id: 'marion-lydia-hughes', label: 'Marion Lydia Hughes' },
-  { id: 'susan-marjorie-hughes', label: 'Susan Marjorie Hughes' },
-  { id: 'paul-naylor-hughes', label: 'Paul Naylor Hughes' },
   { id: 'peter-newman', label: 'Peter Newman' },
   { id: 'anne-newman', label: 'Anne Newman' },
-  { id: 'naomi-newman', label: 'Naomi Newman' },
+  { id: 'naomi-newman', label: 'Naomi Bauer' },
+  { id: 'luke-buxton', label: 'Luke Buxton' },
+  { id: 'sara-buxton', label: 'Sara Buxton' },
   { id: 'david-mackay', label: 'David Mackay' },
   { id: 'you', label: 'Jack Mackay' },
-  { id: 'theodore-mackay', label: 'Theodore Mackay' },
-  { id: 'arty-mackay', label: 'Arty Mackay' },
 ];
 
 // Computes the chain of ancestors above a viewer person (recursive).
@@ -889,7 +947,7 @@ export const places = [
     lat: -33.8688, lng: 151.2093,
     short: 'Home of the Newmans and Mackays since after WWII.',
     body:
-      "Some time after the Second World War, Donald Newman emigrated to Australia with his wife Marion Lydia Hughes — Lydia Naylor's daughter, born in Bray. Their children Peter (1951) and Anne (1962) were raised there, and Anne and her husband Mark Mackay raised their own sons David (1993) and Jack (1996) in Australia in turn. The current generation — Theodore (2020), Arty (2022) and Naomi — are the fourth Australian generation in the line.",
+      "Some time after the Second World War, Donald Newman emigrated to Australia with his wife Marion Lydia Hughes — Lydia Naylor's daughter, born in Bray. Their children Peter (1951) and Anne (1962) were raised there. Peter's daughter Naomi later married Michael Bauer of Germany; two children, Jasmin and Alex. Anne had two children from her first marriage — Luke Buxton (1984) and Sara Buxton (1988) — and two more with her second husband Mark Mackay: David (1993) and Jack (1996). The youngest generation — Theodore (2020), Arty (2022), Jasmin and Alex Bauer, and Sara's children Dru Urban and Oden Figet — are the fourth Australian-descended generation in the line.",
   },
 ];
 
@@ -1404,6 +1462,8 @@ export const timeline = [
   { year: 1951, type: 'family', label: 'Peter Newman born', personId: 'peter-newman' },
   { year: 1962, type: 'family', label: 'Anne Newman born', personId: 'anne-newman' },
   { year: 1987, type: 'family', label: 'Joe Naylor interviewed in the Bray People', personId: 'joe-naylor' },
+  { year: 1984, type: 'family', label: 'Luke Buxton born', personId: 'luke-buxton' },
+  { year: 1988, type: 'family', label: 'Sara Buxton born', personId: 'sara-buxton' },
   { year: 1993, type: 'family', label: 'David Mackay born', personId: 'david-mackay' },
   { year: 1996, type: 'family', label: 'Jack Mackay born', personId: 'you' },
   { year: 1999, type: 'family', label: 'Claire Crowther / Bray Cualann Historical Society letter' },
@@ -1418,6 +1478,8 @@ export const branchStyle = {
   hughes: { color: '#3f5a44', label: 'Hughes' },
   newman: { color: '#2b3a5a', label: 'Newman' },
   mackay: { color: '#8a4a5a', label: 'Mackay' },
+  buxton: { color: '#506b7e', label: 'Buxton' },
+  bauer: { color: '#4a3a6b', label: 'Bauer' },
 };
 
 // ---------- HELPERS ----------
