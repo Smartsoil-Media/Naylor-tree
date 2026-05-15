@@ -122,12 +122,12 @@ export default function DocumentsView() {
               exit={{ scale: 0.96, opacity: 0 }}
               onClick={(e) => e.stopPropagation()}
             >
-              <div className="bg-sepia-950 relative flex-1 min-h-[260px] flex items-center justify-center">
+              <div className="bg-sepia-950 relative flex-1 min-h-0 min-h-[260px] flex items-center justify-center overflow-hidden">
                 {pages.length > 0 ? (
                   <img
                     src={pages[pageIdx]}
                     alt={`${open.title} — page ${pageIdx + 1}`}
-                    className="max-h-[70vh] max-w-full object-contain select-none"
+                    className="max-h-full max-w-full object-contain select-none"
                   />
                 ) : (
                   <div className="text-cream-100 font-serif italic px-6 py-12 text-center">
@@ -158,7 +158,7 @@ export default function DocumentsView() {
                 )}
               </div>
 
-              <div className="p-5 overflow-y-auto">
+              <div className="p-5 overflow-y-auto shrink-0 max-h-[45vh] sm:max-h-[40vh]">
                 <div className="flex items-start justify-between gap-4">
                   <div>
                     <h2 className="font-serif text-2xl text-sepia-900">{open.title}</h2>
